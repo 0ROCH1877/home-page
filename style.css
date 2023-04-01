@@ -11,8 +11,8 @@ body::before{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 100%;
-    height: 100%;
+    width: 110%;
+    height: 110%;
     position: absolute;
     opacity: 0.2;
     }
@@ -53,12 +53,14 @@ body::before{
     object-fit: cover;
     position:absolute;
     opacity: 1;
+    transition: opacity 1s ease-in-out;
 }
 .s-card_image{
     width: 100%;
     height: 100%;
     object-fit: contain;
     position: relative;
+    transition: 1s ease-in-out;
 }
 .s-card_title{
     font-size: 2rem;
@@ -67,6 +69,47 @@ body::before{
     position: absolute;
     width: 100%;
     bottom: 0;
+    transition: 1s ease-in-out;
+
+}
+.s-controller{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+.s-controller_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1;
+   transition:transform 0.3s ease-in-out ;
+}
+.s-controller_button:hover{
+    transform: scale(1.1);
+}
+
+.s-controller_button:nth-child(2){
+    margin: 0 3.75rem;
+}
+.s-controller_line{
+background-color: white;
+width: 50%;
+height: 2px;
+position: absolute;
+
+/* hover card animation*/
+
 
 }
 footer{
@@ -74,4 +117,14 @@ footer{
     text-align: center;
     background-color: black;
     opacity: 0.8;
+}
+.s-card--hovered .s-card_background{
+    cursor: pointer;
+    opacity: 0;
+}
+.s-card--hovered .s-card_image{
+    transform: scale(1.4);
+}
+.s-card--hovered .s-card_title{
+    transform: scale(1.4);
 }
