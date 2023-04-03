@@ -1,3 +1,5 @@
+@import url('reset.css');
+@import url('global.css');
 .s-wrapper{
     display: flex;
     height: 100vh;
@@ -11,10 +13,81 @@
  display: flex;
  justify-content: center;
  align-items: center;
+
 }
-.s-wrapper .s-left-content{
+.s-wrapper .s-main-content{
     height: 100%;
     width: 100%;
     background-color: gray;
-    
+    padding-left: 30px;
 }
+.navigator{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+   
+}
+.navigator ul li{
+    margin: 10%;
+ height: 60%;
+
+}
+.navigator ul li:first-child{
+    margin-top: 0;
+
+}
+.navigator ul li:last-child{
+    margin-bottom: 0;
+}
+.navigator ul li a{ 
+    color: white;
+    border:solid 2px white ;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2; 
+
+}
+
+    
+
+  .navigator::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 55%; /* Centraliza a linha */
+    transform: translateX(-50%); /* Centraliza a linha */
+    width: 2px;
+    height: 100%;
+    background-color: rgb(243, 6, 6);
+    z-index: 1; /* Adiciona um z-index ainda maior */
+  }
+  
+.navigator ul li a {
+    display: inline-block;
+    padding: 10px;
+    font-size: 24px;
+    color: #000;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .navigator ul li a:hover {
+    color: rgb(247, 242, 242);
+    transform: scale(1.2);
+  }
+  .navigator_icon{
+    position: absolute;
+    top: -75px;
+    left: 5%;
+    z-index: 1;
+  }
+  
