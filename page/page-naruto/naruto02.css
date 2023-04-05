@@ -1,0 +1,228 @@
+@import url('/assets/reset.css');
+@import url('/assets/global.css');
+.s-wrapper{
+    display: flex;
+    height: 100vh;
+    flex-flow: row nowrap;
+
+}
+.s-wrapper .s-left-column{
+ width: 100px;
+ height: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: fixed;
+ padding-right: 50px;
+ left: 0;
+ top: 0;
+ z-index: 1;
+
+}
+.s-wrapper .s-main-content{
+    height: 100%;
+    width: 100%;
+    padding-left: 130px;
+    position: relative;
+}
+.s-wrapper .s-main-content_top{
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.s-wrapper .s-main-content_bottom{
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: flex-end;
+  
+}
+.s-wrapper .s-main-content .s-logo img{
+  margin-top: 50px;
+  margin-left: 0;
+  margin-bottom: 30px;
+}
+.pills ul{
+  display: flex;
+  flex-direction: row;
+}
+.pills ul li{
+  background-color: var(--primary-color);
+  color: white;
+  padding: 5px 15px;
+  margin: 0 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+.pills ul ul li:first-child{
+  margin-left: 0;
+}
+.s-wrapper .s-main-content_top .s-description{
+  background-color: rgba(0, 0, 0, .7);
+  max-width: 50%;
+  padding: 20px;
+  border-radius: 10px;
+}
+.s-wrapper .s-main-content_top .s-description .s-description_text p{
+  color: white;
+  line-height: 170%;
+}
+.s-wrapper .s-main-content_top .s-description .s-description_text .pills{
+  margin-bottom: 20px;
+}
+.navigator{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+   
+}
+
+.navigator ul li{
+    margin: 10%;
+ height: 60%;
+
+}
+.navigator ul li:first-child{
+    margin-top: 0;
+
+}
+.navigator ul li:last-child{
+    margin-bottom: 0;
+}
+.navigator ul li a{ 
+    color: white;
+    border:solid 2px white ;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2; 
+
+}
+
+    
+
+  .navigator::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 55%; /* Centraliza a linha */
+    transform: translateX(-50%); /* Centraliza a linha */
+    width: 2px;
+    height: 100%;
+    background-color: rgb(243, 6, 6);
+    z-index: 1; /* Adiciona um z-index ainda maior */
+  }
+  
+.navigator ul li a {
+    display: inline-block;
+    padding: 10px;
+    font-size: 24px;
+    color: #000;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .navigator ul li a:hover {
+    color: rgb(247, 242, 242);
+    transform: scale(1.2);
+  }
+  .navigator_icon{
+    position: absolute;
+    top: -75px;
+    left: 4%;
+    z-index: 1;
+  }
+  .play-btn {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: #FF0000;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0 rgba(255, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .play-btn:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 30px solid #000000;
+  }
+  
+  .play-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px 0 rgba(255, 0, 0, 0.8);
+  }
+  
+  .play-btn:after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background-color: rgba(255, 0, 0, 0.3);
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .play-btn:hover:after {
+    opacity: 1;
+  }
+  .gallery {
+    padding: 20px;
+    padding-left: 0;
+  }
+  
+  .gallery ul {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .gallery ul li {
+    margin-left: 25px;
+  }
+  
+  .gallery ul li:first-child {
+    margin-left: 0px;
+  }
+  
+  .gallery ul li a img {
+    border: solid 6px white;
+    border-radius: 15px;
+    max-width: 100%;
+  }
+  .naruto-01-01{
+    background-image: url('https://caua1000.files.wordpress.com/2012/06/naruto-uzumaki-wallpaper.jpg');
+    background-size: cover;
+  }
+  .naruto-01-01{
+    background-image: url('https://caua1000.files.wordpress.com/2012/06/naruto-uzumaki-wallpaper.jpg');
+    background-size: cover;
+  }
+  .naruto-01-01{
+    background-image: url('https://caua1000.files.wordpress.com/2012/06/naruto-uzumaki-wallpaper.jpg');
+    background-size: cover;
+  }
+  .s-wrapper video{
+    position: fixed;
+    width: 100%;
+  }
