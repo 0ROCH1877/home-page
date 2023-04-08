@@ -210,11 +210,12 @@
     border-radius: 15px;
     max-width: 100%;
   }
-  .naruto-01-01{
-    background-image: url('https://caua1000.files.wordpress.com/2012/06/naruto-uzumaki-wallpaper.jpg');
-    background-size: cover;
-  }
+ 
   .s-wrapper video{
     position: fixed;
     width: 100%;
+  }
+  .naruto-01-01{
+    background-image: url('https://coolwallpapers.me/picsup/5091145-naruto-sakura-haruno.png');
+    background-size: cover;
   }

@@ -12,7 +12,7 @@
     <header>
       <nav class="s-menu">
         <ul>
-          <li class="s-menu_item"><a href="/index.html">Home</a></li>
+          <li class="s-menu_item"><a href="/assets/indes.html">Home</a></li>
           <li class="s-menu_item"><a href="https://pt.wikipedia.org/wiki/Sasuke_Uchiha">sasuke</a></li>
           <li class="s-menu_item s-menu_icon"><img src="/assets-naruto/sharigan.png.gif" width="80" height="64" alt="sharigan"></li>
           <li class="s-menu_item"><a href="https://pt.wikipedia.org/wiki/Sakura_Haruno">sakura</a></li>
@@ -20,7 +20,10 @@
         </ul>
       </nav>
       <div class="s-container">
-        <a href="" class="s-card" id="naruto-01">
+        <div class="s-cards-carousel" style="transform: translateZ(-40vw) rotateY(0deg);">
+          
+
+        <a href="/page/page-sasuke/sasuke01.html" class="s-card" id="naruto-01">
           <img class="s-card_background" src="/assets-naruto/cenario/cenario-sasuke.jpg" alt="">
           <img class="s-card_image" src="/assets-naruto/sasuke.png" alt="sasuke">
           <h2 class="s-card_title">sasuke</h2>
@@ -30,16 +33,18 @@
           <img class="s-card_image" src="/assets-naruto/naruto.png.png" alt="naruto">
           <h2 class="s-card_title">naruto</h2>
         </a>
-        <a href="" class="s-card" id="naruto-03">
+        <a href="/page/page-sakura/sakura01.html" class="s-card" id="naruto-03">
           <img class="s-card_background" src="/assets-naruto/cenario/cenario-sakura.jpg" alt="">
           <img class="s-card_image" src="/assets-naruto/sakura.png" alt="sakura">
           <h2 class="s-card_title">sakura</h2>
         </a>
+        </div>
       </div>
+    </div>
       <div class="s-controller">
-        <div class="s-controller_button">01</div>
-        <div class="s-controller_button">02</div>
-        <div class="s-controller_button">03</div>
+        <div id="1" onclick="selectCarouselItem(this)" class="s-controller_button s-controller_button--active">01</div>
+        <div id="2" onclick="selectCarouselItem(this)" class="s-controller_button s-controller_button--active">02</div>
+        <div id="3" onclick="selectCarouselItem(this)" class="s-controller_button s-controller_button--active">03</div>
         <div class="s-controller_line"></div>
       </div>
     </header>
